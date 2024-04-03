@@ -1,0 +1,12 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy', sans-serif;
+    font-size: 15px;
+    background-color:rgb(207, 207, 207);
+}
+
+#root{
+    height: 100%;
+}
