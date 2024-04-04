@@ -1,10 +1,7 @@
 html,body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'gilroy', sans-serif;
     font-size: 15px;
-    background-color:rgb(228, 107, 107);
+    background-color: var(--primary-color);
 }
 
 #root{
