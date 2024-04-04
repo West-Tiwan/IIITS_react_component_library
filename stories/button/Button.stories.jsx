@@ -16,7 +16,7 @@ export default {
       },
       children: {
         control: { type: 'text' },
-      },
+      }
     },
 };
 

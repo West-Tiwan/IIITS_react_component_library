@@ -1,5 +1,5 @@
-import 'minireset.css'
-import '../src/styles/global.css'
+import 'minireset.css';
+import '../src/styles/global.module.css';
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {
