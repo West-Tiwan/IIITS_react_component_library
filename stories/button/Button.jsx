@@ -1,19 +1,25 @@
 import React from 'react';
 import ProtoTypes from 'prop-types';
+import classNames from 'classnames';
 import { options } from './constants';
 import './Button.css';
-import classNames from 'classnames';
 
-export const Button = ({ colour = 'primary', size = 'md', children = 'Click Me !!!' }) => {
+export const Button = ({
+                           color = 'primary',
+                           size = 'md',
+                           children ,
+                            isDragable = false,
+}) => {
     return (
-        <button className={classNames(`btn`,[`btn-${colour} : colour , btn-${size} : size, `])}>{children}</button>
+        <button className={classNames(`btn`, {[`color-${color}`]: color ,[`size-${size}`] : size ,"is-dragble": isDragable})}>{children}</button>
     )
 };
 
 Button.propTypes = {
-    colour: ProtoTypes.oneOf(options.colour),
+    color: ProtoTypes.oneOf(options.color),
     size: ProtoTypes.oneOf(options.size),
     children: ProtoTypes.node.isRequired,
+    isDragable: ProtoTypes.bool,
 };
 
 export default Button;

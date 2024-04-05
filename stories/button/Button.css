@@ -1,25 +1,39 @@
-:root{
-    --color-primary:#9879e9;
-    --color-secondary:#eb2d52;
-    --box-shadow-sm: 0px 4px 5px rgba(0, 0, 0, 0.7);
-}
-
 .btn {
     padding: 12px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid transparent;
-    border-radius: 10%;
+    border-radius: 5px;
     color: white;
     box-shadow: var(--box-shadow-sm);
     margin: 20px;
+    cursor: pointer;
 }
 
-.btn-primary {
-    background-color: var(--primary-color);
+.color-primary {
+    background-color: var(--color-primary);
 }
 
-.btn-secondary {
-    background-color: var(--secondary-color);
+.color-secondary {
+    background-color: var(--color-secondary);
+}
+
+.size-sm {
+    padding: 8px 16px;
+}
+
+.size-md {
+    padding: 15px 32px;
+    font-size: 1.2rem;
+}
+
+.size-lg {
+    padding: 30px 64px;
+    font-size: 1.7rem;
+}
+
+.is-dragable {
+    cursor: grab;
+    user-select: none;
 }

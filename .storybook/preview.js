@@ -1,7 +1,6 @@
+import '../styles/tokens.css';
+import '../styles/global.css';
 import 'minireset.css';
-//css var() not working in other files,
-import '../src/styles/tokens.css';
-import '../src/styles/global.css';
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {
