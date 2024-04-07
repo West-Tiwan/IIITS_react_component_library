@@ -10,19 +10,19 @@ export default {
             description: 'The color of the button',
             table: {
                 type: {
-                    summary : options.color.map((color, index) => `'${options}'`).join("|"),
+                    summary: options.color.map((color, index) => `'${options}'`).join("|"),
                 }
             },
-            control: {type: 'radio' , options: options.color},
+            control: {type: 'radio', options: options.color},
         },
         size: {
             description: 'The size of the button',
             table: {
                 type: {
-                    summary : options.size.map((size, index) => `'${options}'`).join("|"),
+                    summary: options.size.map((size, index) => `'${options}'`).join("|"),
                 }
             },
-            control: {type: 'select' , options: options.size},
+            control: {type: 'select', options: options.size},
         },
         children: {
             control: {type: 'text'},
@@ -43,7 +43,6 @@ export const Default = Template.bind({});
 
 export const Dragable = Template.bind({});
 Dragable.args = {
-    children: 'Drag Me !!!',
     isDragable: true,
 };
 

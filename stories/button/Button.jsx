@@ -1,17 +1,23 @@
 import React from 'react';
 import ProtoTypes from 'prop-types';
 import classNames from 'classnames';
-import { options } from './constants';
-import './Button.css';
+import {options} from './constants';
+import styles from './Button.module.css';
+import {getClasses} from '../../helpers/styles';
 
 export const Button = ({
                            color = 'primary',
                            size = 'md',
-                           children ,
-                            isDragable = false,
-}) => {
+                           children,
+                           isDragable = false,
+                       }) => {
+    const getStyles = getClasses(styles)({
+        color,
+        size
+    });
+
     return (
-        <button className={classNames(`btn`, {[`color-${color}`]: color ,[`size-${size}`] : size ,"is-dragble": isDragable})}>{children}</button>
+        <button className={getStyles("btn",["color","size"],{"is-dragable":isDragable})}>{children}</button>
     )
 };
 

@@ -1,6 +1,10 @@
 :root{
     --color-primary:#9879e9;
-    --color-secondary:#eb2d52;
+    --color-primary-darker: rgba(152, 121, 233, 0.7);
+    --color-danger:#eb2d52;
+    --color-danger-darker: rgba(235, 45, 82, 0.7);
+    --color-common: rgb(44, 44, 44);
+    --color-common-darker: rgba(124, 124, 124, 0.7);
     --box-shadow-sm: 0px 4px 5px rgba(0, 0, 0, 0.7);
     box-sizing: border-box;
     overflow: hidden;

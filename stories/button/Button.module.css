@@ -4,19 +4,35 @@
     justify-content: center;
     align-items: center;
     border: 1px solid transparent;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
     box-shadow: var(--box-shadow-sm);
-    margin: 20px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .color-primary {
     background-color: var(--color-primary);
 }
 
-.color-secondary {
-    background-color: var(--color-secondary);
+.color-primary:hover {
+    background-color: var(--color-primary-darker);
+}
+
+.color-danger {
+    background-color: var(--color-danger);
+}
+
+.color-danger:hover {
+    background-color: var(--color-danger-darker);
+}
+
+.color-common {
+    background-color: var(--color-common);
+}
+
+.color-common:hover {
+    background-color: var(--color-common-darker);
 }
 
 .size-sm {
