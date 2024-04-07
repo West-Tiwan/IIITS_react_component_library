@@ -1,43 +1,22 @@
-import React from 'react';
+import {getListTemplate, getTemplate} from "../../helpers/storybook";
 import Button from './Button';
+import styles from './Button.module.css';
 import {options} from './constants';
+
+const Template = getTemplate(Button, styles);
+const ListTemplate = getListTemplate(Button, styles);
 
 export default {
     title: 'Button',
     component: Button,
-    argTypes: {
-        color: {
-            description: 'The color of the button',
-            table: {
-                type: {
-                    summary: options.color.map((color, index) => `'${options}'`).join("|"),
-                }
-            },
-            control: {type: 'radio', options: options.color},
-        },
-        size: {
-            description: 'The size of the button',
-            table: {
-                type: {
-                    summary: options.size.map((size, index) => `'${options}'`).join("|"),
-                }
-            },
-            control: {type: 'select', options: options.size},
-        },
-        children: {
-            control: {type: 'text'},
-        }
-    },
     args: {
-        color: 'primary',
-        size: 'md',
         children: 'Click Me',
     },
+    argTypes: {
+        color: getOptionsArgTypes(options.color),
+        size: getOptionsArgTypes(options.size)
+    },
 };
-
-const Template = (args) => <Button {...args} />;
-
-const ListTemplate = ({items, ...args}) => items.map((item, index) => <Button key={index} {...args} {...item} />);
 
 export const Default = Template.bind({});
 
