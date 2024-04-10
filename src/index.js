@@ -1,1 +1,1 @@
-export * from './components/Form'
+export * from './stories'
