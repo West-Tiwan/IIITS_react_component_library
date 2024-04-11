@@ -17,9 +17,11 @@ npm install iiits-form-library
 
 import { LoginForm } from 'iiits-form-library';
 
-// Inside your export functon 
+// Inside your export
 
-< LoginForm />
+< LoginForm button_text={"Login"} method={"post"} action={"/login"} target={"_self"}/>
+
+//options shown above are optional and taken as default values
 
 // Similar process for other components
 ````
