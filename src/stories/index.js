@@ -1,1 +1,2 @@
-export { Form } from './Form.jsx';
+export { LoginForm } from './LoginForm.jsx';
+export { RegisterForm } from './RegisterForm.jsx';

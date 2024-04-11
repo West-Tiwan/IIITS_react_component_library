@@ -1,4 +1,4 @@
-# IIITS Form Library
+# IIITS LoginForm Library
 
 This is a simple form library developed at IIITS.
 
@@ -13,9 +13,9 @@ npm install iiits-form-library
 
 ```javascript
 
-import { Form } from 'iiits-form-library';
+import { LoginForm } from 'iiits-form-library';
 
-// Use the Form component
+// Use the LoginForm component
 ````
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.  

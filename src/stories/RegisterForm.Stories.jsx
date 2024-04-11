@@ -1,17 +1,17 @@
 import React from 'react';
 import {Meta, Story, Preview, Props, Canvas, ArgsTable} from '@storybook/react';
-import {Form} from './Form.jsx';
+import {RegisterForm} from './RegisterForm.jsx';
 
 let Template;
-Template = (args) => <Form {...args} />;
+Template = (args) => <RegisterForm {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {};
 
 export default {
-    displayName: 'Form',
-    title: 'Form',
-    component: Form,
+    displayName: 'Register Form',
+    title: 'Register Form',
+    component: RegisterForm,
     argTypes: {},
     parameters: {}
 } as Meta;
